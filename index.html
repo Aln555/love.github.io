@@ -1,0 +1,283 @@
+from pathlib import Path
+
+base = Path("/mnt/data/site_amor")
+base.mkdir(exist_ok=True)
+
+html = r'''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um cantinho feito com amor para uma pessoa especial.">
+  <title>Para o meu amor ❤️</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hearts" aria-hidden="true">
+      <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow">um cantinho só nosso</p>
+      <h1>Para você,<br><span>meu amor.</span></h1>
+      <p class="intro">
+        Entre tantas pessoas, tantos caminhos e tantos dias,
+        a vida colocou você no meu caminho. E eu só quero
+        guardar aqui um pequeno pedaço do que sinto por você.
+      </p>
+      <a href="#nossa-historia" class="button">Entrar na nossa história ↓</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="nossa-historia" class="section story">
+      <div class="section-heading">
+        <span class="number">01</span>
+        <div>
+          <p class="eyebrow">nossa história</p>
+          <h2>De algum jeito, <em>você chegou.</em></h2>
+        </div>
+      </div>
+
+      <div class="story-grid">
+        <div class="photo-frame large">
+          <!-- TROQUE "fotos/foto1.jpg" PELO CAMINHO DA SUA FOTO -->
+          <img src="fotos/foto1.jpg" alt="Nossa foto" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder">
+            <span>♡</span>
+            <strong>Coloque nossa foto aqui</strong>
+            <small>fotos/foto1.jpg</small>
+          </div>
+        </div>
+
+        <div class="story-text">
+          <p>
+            Talvez a nossa história não tenha começado como nos filmes.
+            Talvez não tenha existido uma música tocando ao fundo ou um
+            instante perfeitamente planejado. Mas aconteceu de um jeito
+            muito mais bonito: aconteceu de verdade.
+          </p>
+          <p>
+            E, desde que você entrou na minha vida, alguns momentos
+            passaram a ter outro significado. Um sorriso seu pode mudar
+            completamente o meu dia. Uma conversa simples pode virar
+            uma lembrança que eu quero guardar. E a sua presença,
+            mesmo nas coisas pequenas, se tornou especial para mim.
+          </p>
+          <p class="highlight">
+            "Se eu pudesse escolher de novo, entre todos os caminhos,
+            ainda escolheria aquele que me levasse até você."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="section-heading centered">
+        <span class="number">02</span>
+        <div>
+          <p class="eyebrow">nossos momentos</p>
+          <h2>Pequenos pedaços de <em>nós.</em></h2>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <!-- Você pode duplicar estes blocos para adicionar mais fotos -->
+        <div class="photo-frame photo-1">
+          <img src="fotos/foto2.jpg" alt="Momento nosso" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder"><span>♡</span><small>fotos/foto2.jpg</small></div>
+        </div>
+
+        <div class="photo-frame photo-2">
+          <img src="fotos/foto3.jpg" alt="Momento nosso" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder"><span>♡</span><small>fotos/foto3.jpg</small></div>
+        </div>
+
+        <div class="photo-frame photo-3">
+          <img src="fotos/foto4.jpg" alt="Momento nosso" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder"><span>♡</span><small>fotos/foto4.jpg</small></div>
+        </div>
+
+        <div class="photo-frame photo-4">
+          <img src="fotos/foto5.jpg" alt="Momento nosso" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder"><span>♡</span><small>fotos/foto5.jpg</small></div>
+        </div>
+
+        <div class="photo-frame photo-5">
+          <img src="fotos/foto6.jpg" alt="Momento nosso" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder"><span>♡</span><small>fotos/foto6.jpg</small></div>
+        </div>
+
+        <div class="photo-frame photo-6">
+          <img src="fotos/foto7.jpg" alt="Momento nosso" onerror="this.style.display='none'; this.parentElement.classList.add('empty-photo')">
+          <div class="photo-placeholder"><span>♡</span><small>fotos/foto7.jpg</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section poem-section">
+      <div class="poem-intro">
+        <p class="eyebrow">03 · para você</p>
+        <h2>Se eu tivesse que transformar<br>o que sinto em palavras...</h2>
+        <p>Eu escreveria isso.</p>
+      </div>
+
+      <article class="poem">
+        <div class="poem-mark">“</div>
+
+        <h3>Onde mora o meu amor</h3>
+
+        <p>
+          Eu não sei dizer exatamente quando aconteceu,<br>
+          em que momento o meu coração percebeu,<br>
+          que entre tantos rostos, tantos caminhos e tanta gente,<br>
+          havia alguém que faria tudo ser diferente.
+        </p>
+
+        <p>
+          Talvez tenha sido no primeiro sorriso,<br>
+          talvez numa conversa que parecia sem importância,<br>
+          talvez no jeito que você olha para mim,<br>
+          ou simplesmente na paz que existe quando você está aqui.
+        </p>
+
+        <p>
+          Porque amar você não mora apenas nos grandes momentos,<br>
+          não depende de flores, presentes ou palavras bonitas.<br>
+          O meu amor aparece nas coisas pequenas:<br>
+          na vontade de saber como foi o seu dia,<br>
+          no desejo de te ver bem,<br>
+          na saudade que chega quando você vai embora,<br>
+          e naquele sorriso involuntário quando lembro de você.
+        </p>
+
+        <p>
+          Você se tornou parte das minhas lembranças favoritas,<br>
+          daquelas que a gente revisita sem perceber.<br>
+          E é curioso como uma pessoa pode chegar tão devagar<br>
+          e, quando percebemos, já ocupa um espaço tão grande.<br>
+          Um espaço que antes nem sabíamos que existia.
+        </p>
+
+        <p>
+          Eu gosto de você nos dias fáceis,<br>
+          quando tudo parece dar certo e o mundo fica leve.<br>
+          Mas também quero estar ao seu lado nos dias difíceis,<br>
+          quando o sorriso custa um pouco mais para aparecer,<br>
+          quando as coisas não saem como planejamos<br>
+          e quando tudo o que você precisa é de alguém que fique.
+        </p>
+
+        <p>
+          Não quero te prometer uma vida sem problemas,<br>
+          porque sei que isso não existe.<br>
+          Quero prometer algo mais verdadeiro:<br>
+          enquanto estivermos juntos,<br>
+          vou valorizar cada oportunidade de cuidar de nós,<br>
+          aprender com os nossos erros,<br>
+          comemorar nossas conquistas<br>
+          e construir, pouco a pouco, a nossa história.
+        </p>
+
+        <p>
+          Se algum dia você perguntar o que eu encontrei em você,<br>
+          talvez eu não consiga responder com uma única palavra.<br>
+          Porque encontrei carinho, amizade, companheirismo,<br>
+          encontrei alguém com quem quero dividir momentos,<br>
+          encontrei alguém que faz os dias comuns parecerem especiais.
+        </p>
+
+        <p>
+          E se um dia o tempo mudar nossos cabelos,<br>
+          nossas rotinas, nossos planos e a maneira como vemos o mundo,<br>
+          eu espero que ainda exista entre nós aquela lembrança:<br>
+          a lembrança de quando tudo começou,<br>
+          de quando éramos apenas duas pessoas<br>
+          descobrindo, pouco a pouco, o que significava amar.
+        </p>
+
+        <p>
+          Porque eu não quero apenas viver os momentos perfeitos com você.<br>
+          Quero viver os reais.<br>
+          Os domingos tranquilos,<br>
+          as conversas longas,<br>
+          as risadas por motivos bobos,<br>
+          os abraços demorados,<br>
+          os planos que dão certo<br>
+          e até aqueles que precisaremos tentar de novo.
+        </p>
+
+        <p>
+          Quero colecionar memórias ao seu lado.<br>
+          Quero olhar para trás algum dia<br>
+          e perceber que não foram apenas fotografias que guardamos,<br>
+          mas uma vida inteira de pequenos momentos<br>
+          que fizeram tudo valer a pena.
+        </p>
+
+        <p>
+          E, se eu pudesse colocar em uma frase tudo aquilo<br>
+          que meu coração tenta dizer quando penso em você,<br>
+          talvez fosse simplesmente isto:
+        </p>
+
+        <p class="poem-final">
+          Eu escolheria você.<br>
+          Nos dias bons.<br>
+          Nos dias difíceis.<br>
+          Nas pequenas coisas.<br>
+          Nos grandes sonhos.<br>
+          Hoje, amanhã,<br>
+          e em todos os capítulos que ainda vamos escrever.
+        </p>
+
+        <p class="signature">
+          Com todo o meu amor,<br>
+          <strong>para a pessoa que tornou a minha história mais bonita.</strong>
+        </p>
+      </article>
+    </section>
+
+    <section class="section memories">
+      <div class="section-heading centered">
+        <span class="number">04</span>
+        <div>
+          <p class="eyebrow">para guardar</p>
+          <h2>Mais capítulos <em>virão.</em></h2>
+        </div>
+      </div>
+
+      <div class="memory-cards">
+        <div class="memory-card">
+          <span>01</span>
+          <h3>Nosso primeiro...</h3>
+          <p>Escreva aqui uma lembrança especial de vocês.</p>
+        </div>
+
+        <div class="memory-card">
+          <span>02</span>
+          <h3>Um momento inesquecível</h3>
+          <p>Conte aqui uma história que sempre faz vocês sorrirem.</p>
+        </div>
+
+        <div class="memory-card">
+          <span>03</span>
+          <h3>O que ainda queremos viver</h3>
+          <p>Coloque aqui sonhos, viagens e planos para o futuro.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-heart">♥</div>
+    <p>Feito com amor, para você.</p>
+    <small>Nosso capítulo favorito ainda está sendo escrito.</small>
+  </footer>
+
+</body>
+</html>
